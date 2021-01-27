@@ -320,7 +320,7 @@ public class ServerCommandProxy {
 		// XML-RPC-v1 uses the non-generic form... hopefully it will be around for a while
 		_proxy = (IServerCommandProxy)XmlRpcProxyGen.Create(typeof(IServerCommandProxy));
 
-		_proxy.Url = "http://" + server + ":" + port + "/rpc/api/xmlrpc";
+		_proxy.Url = "https://" + server + ":" + port + "/rpc/api/xmlrpc";
 		_authToken = authToken;
 	}
 
